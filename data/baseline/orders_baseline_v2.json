@@ -1,0 +1,314 @@
+{
+  "version": 2,
+  "dataset_name": "orders",
+  "created_at": "2026-11-11T14:22:36.342460Z",
+  "row_count": 10000,
+  "source_file": "data\\generated\\orders_baseline.csv",
+  "is_active": true,
+  "profile": {
+    "dataset_name": "orders",
+    "run_id": "baseline_creation",
+    "created_at": "2026-11-11T14:22:36.342460Z",
+    "row_count": 10000,
+    "column_count": 9,
+    "columns": {
+      "order_id": {
+        "column_name": "order_id",
+        "inferred_type": "string",
+        "total_rows": 10000,
+        "null_count": 0,
+        "non_null_count": 10000,
+        "null_percentage": 0.0,
+        "unique_count": 10000,
+        "duplicate_count": 0,
+        "numerical_stats": null,
+        "categorical_stats": null,
+        "datetime_stats": null
+      },
+      "customer_id": {
+        "column_name": "customer_id",
+        "inferred_type": "string",
+        "total_rows": 10000,
+        "null_count": 0,
+        "non_null_count": 10000,
+        "null_percentage": 0.0,
+        "unique_count": 3669,
+        "duplicate_count": 6331,
+        "numerical_stats": null,
+        "categorical_stats": null,
+        "datetime_stats": null
+      },
+      "order_amount": {
+        "column_name": "order_amount",
+        "inferred_type": "numerical",
+        "total_rows": 10000,
+        "null_count": 0,
+        "non_null_count": 10000,
+        "null_percentage": 0.0,
+        "unique_count": 7743,
+        "duplicate_count": 2257,
+        "numerical_stats": {
+          "min": 8.73,
+          "max": 1086.53,
+          "mean": 109.3782,
+          "median": 90.485,
+          "std": 72.0009,
+          "p25": 60.54,
+          "p50": 90.485,
+          "p75": 136.645,
+          "histogram_bins": [
+            8.73,
+            116.51,
+            224.29,
+            332.07000000000005,
+            439.85,
+            547.63,
+            655.4100000000001,
+            763.19,
+            870.97,
+            978.75,
+            1086.53
+          ],
+          "histogram_counts": [
+            6634,
+            2656,
+            554,
+            119,
+            28,
+            7,
+            1,
+            0,
+            0,
+            1
+          ],
+          "histogram_proportions": [
+            0.6634,
+            0.2656,
+            0.0554,
+            0.0119,
+            0.0028,
+            0.0007,
+            0.0001,
+            0.0,
+            0.0,
+            0.0001
+          ]
+        },
+        "categorical_stats": null,
+        "datetime_stats": null
+      },
+      "order_status": {
+        "column_name": "order_status",
+        "inferred_type": "categorical",
+        "total_rows": 10000,
+        "null_count": 0,
+        "non_null_count": 10000,
+        "null_percentage": 0.0,
+        "unique_count": 4,
+        "duplicate_count": 9996,
+        "numerical_stats": null,
+        "categorical_stats": {
+          "frequencies": {
+            "DELIVERED": 3994,
+            "SHIPPED": 3565,
+            "PLACED": 1955,
+            "CANCELLED": 486
+          },
+          "percentages": {
+            "DELIVERED": 39.94,
+            "SHIPPED": 35.65,
+            "PLACED": 19.55,
+            "CANCELLED": 4.86
+          },
+          "top_10": [
+            {
+              "category": "DELIVERED",
+              "count": 3994,
+              "percentage": 39.94
+            },
+            {
+              "category": "SHIPPED",
+              "count": 3565,
+              "percentage": 35.65
+            },
+            {
+              "category": "PLACED",
+              "count": 1955,
+              "percentage": 19.55
+            },
+            {
+              "category": "CANCELLED",
+              "count": 486,
+              "percentage": 4.86
+            }
+          ],
+          "new_categories": [],
+          "missing_categories": []
+        },
+        "datetime_stats": null
+      },
+      "payment_method": {
+        "column_name": "payment_method",
+        "inferred_type": "categorical",
+        "total_rows": 10000,
+        "null_count": 0,
+        "non_null_count": 10000,
+        "null_percentage": 0.0,
+        "unique_count": 4,
+        "duplicate_count": 9996,
+        "numerical_stats": null,
+        "categorical_stats": {
+          "frequencies": {
+            "UPI": 4454,
+            "CARD": 3044,
+            "COD": 1507,
+            "NET_BANKING": 995
+          },
+          "percentages": {
+            "UPI": 44.54,
+            "CARD": 30.44,
+            "COD": 15.07,
+            "NET_BANKING": 9.95
+          },
+          "top_10": [
+            {
+              "category": "UPI",
+              "count": 4454,
+              "percentage": 44.54
+            },
+            {
+              "category": "CARD",
+              "count": 3044,
+              "percentage": 30.44
+            },
+            {
+              "category": "COD",
+              "count": 1507,
+              "percentage": 15.07
+            },
+            {
+              "category": "NET_BANKING",
+              "count": 995,
+              "percentage": 9.95
+            }
+          ],
+          "new_categories": [],
+          "missing_categories": []
+        },
+        "datetime_stats": null
+      },
+      "customer_email": {
+        "column_name": "customer_email",
+        "inferred_type": "string",
+        "total_rows": 10000,
+        "null_count": 174,
+        "non_null_count": 9826,
+        "null_percentage": 1.74,
+        "unique_count": 9826,
+        "duplicate_count": 0,
+        "numerical_stats": null,
+        "categorical_stats": null,
+        "datetime_stats": null
+      },
+      "quantity": {
+        "column_name": "quantity",
+        "inferred_type": "numerical",
+        "total_rows": 10000,
+        "null_count": 0,
+        "non_null_count": 10000,
+        "null_percentage": 0.0,
+        "unique_count": 15,
+        "duplicate_count": 9985,
+        "numerical_stats": {
+          "min": 1.0,
+          "max": 15.0,
+          "mean": 2.2166,
+          "median": 2.0,
+          "std": 1.637,
+          "p25": 1.0,
+          "p50": 2.0,
+          "p75": 3.0,
+          "histogram_bins": [
+            1.0,
+            2.4,
+            3.8,
+            5.199999999999999,
+            6.6,
+            8.0,
+            9.399999999999999,
+            10.799999999999999,
+            12.2,
+            13.6,
+            15.0
+          ],
+          "histogram_counts": [
+            6984,
+            1377,
+            1142,
+            224,
+            124,
+            106,
+            17,
+            20,
+            3,
+            3
+          ],
+          "histogram_proportions": [
+            0.6984,
+            0.1377,
+            0.1142,
+            0.0224,
+            0.0124,
+            0.0106,
+            0.0017,
+            0.002,
+            0.0003,
+            0.0003
+          ]
+        },
+        "categorical_stats": null,
+        "datetime_stats": null
+      },
+      "order_timestamp": {
+        "column_name": "order_timestamp",
+        "inferred_type": "datetime",
+        "total_rows": 10000,
+        "null_count": 0,
+        "non_null_count": 10000,
+        "null_percentage": 0.0,
+        "unique_count": 9962,
+        "duplicate_count": 38,
+        "numerical_stats": null,
+        "categorical_stats": null,
+        "datetime_stats": {
+          "min_timestamp": "2026-10-28T14:23:11.229920+00:00",
+          "max_timestamp": "2026-11-11T14:21:09.229920+00:00",
+          "latest_event_timestamp": "2026-11-11T14:21:09.229920+00:00",
+          "avg_event_age_hours": 168.52,
+          "is_sorted_asc": true,
+          "gap_count": 0
+        }
+      },
+      "updated_at": {
+        "column_name": "updated_at",
+        "inferred_type": "datetime",
+        "total_rows": 10000,
+        "null_count": 0,
+        "non_null_count": 10000,
+        "null_percentage": 0.0,
+        "unique_count": 9949,
+        "duplicate_count": 51,
+        "numerical_stats": null,
+        "categorical_stats": null,
+        "datetime_stats": {
+          "min_timestamp": "2026-10-28T16:14:25.229920+00:00",
+          "max_timestamp": "2026-11-13T13:06:16.229920+00:00",
+          "latest_event_timestamp": "2026-11-13T13:06:16.229920+00:00",
+          "avg_event_age_hours": 144.3,
+          "is_sorted_asc": false,
+          "gap_count": 0
+        }
+      }
+    }
+  }
+}

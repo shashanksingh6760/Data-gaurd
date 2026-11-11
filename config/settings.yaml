@@ -1,0 +1,27 @@
+# DataGuard Platform Settings
+application:
+  name: "DataGuard"
+  version: "0.1.0"
+  env: "development"
+
+paths:
+  input_dir: "data/input"
+  generated_dir: "data/generated"
+  baseline_dir: "data/baseline"
+  output_dir: "data/output"
+  quarantine_dir: "data/quarantine"
+  reports_dir: "data/output/reports"
+
+storage:
+  database_url: "sqlite:///dataguard.db"
+  echo_sql: false
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s [%(levelname)s] [%(name)s] %(message)s"
+  date_format: "%Y-%m-%d %H:%M:%S"
+
+pipeline:
+  strict_schema: true
+  stop_on_critical_drift: false
+  max_quarantine_sample_rows: 1000

@@ -1,0 +1,58 @@
+dataset:
+  name: "orders"
+  primary_key: "order_id"
+  foreign_keys:
+    customer_id:
+      reference_dataset: "customers"
+      reference_column: "customer_id"
+
+schema:
+  required_columns:
+    - order_id
+    - customer_id
+    - order_amount
+    - order_status
+    - payment_method
+    - quantity
+    - order_timestamp
+    - updated_at
+  optional_columns:
+    - customer_email
+
+business_rules:
+  order_status:
+    allowed_values:
+      - "PLACED"
+      - "SHIPPED"
+      - "DELIVERED"
+      - "CANCELLED"
+  payment_method:
+    allowed_values:
+      - "UPI"
+      - "CARD"
+      - "COD"
+      - "NET_BANKING"
+  order_amount:
+    min_value: 0.0
+  quantity:
+    min_value: 1
+  email:
+    regex: "^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\\.[a-zA-Z0-9-.]+$"
+
+drift_thresholds:
+  volume:
+    warning_percent: 20.0
+    critical_percent: 40.0
+  null_rate:
+    warning_diff_percentage_points: 5.0
+    critical_diff_percentage_points: 10.0
+  numerical_psi:
+    warning_threshold: 0.10
+    critical_threshold: 0.25
+    bins: 10
+  categorical_tvd:
+    warning_threshold: 0.10
+    critical_threshold: 0.25
+  freshness:
+    warning_staleness_hours: 48.0
+    critical_staleness_hours: 168.0
