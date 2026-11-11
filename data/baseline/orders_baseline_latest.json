@@ -1,25 +1,25 @@
 {
-  "version": 4,
+  "version": 7,
   "dataset_name": "orders",
-  "created_at": "2026-11-11T14:26:36.995116Z",
-  "row_count": 5000,
-  "source_file": "data\\generated\\orders_baseline.csv",
+  "created_at": "2026-11-11T15:25:39.543503Z",
+  "row_count": 150,
+  "source_file": "C:\\Users\\shash\\AppData\\Local\\Temp\\dataguard_test_tiiizgda\\gen_run\\orders_baseline.csv",
   "is_active": true,
   "profile": {
     "dataset_name": "orders",
     "run_id": "baseline_creation",
-    "created_at": "2026-11-11T14:26:36.995116Z",
-    "row_count": 5000,
+    "created_at": "2026-11-11T15:25:39.543503Z",
+    "row_count": 150,
     "column_count": 9,
     "columns": {
       "order_id": {
         "column_name": "order_id",
         "inferred_type": "string",
-        "total_rows": 5000,
+        "total_rows": 150,
         "null_count": 0,
-        "non_null_count": 5000,
+        "non_null_count": 150,
         "null_percentage": 0.0,
-        "unique_count": 5000,
+        "unique_count": 150,
         "duplicate_count": 0,
         "numerical_stats": null,
         "categorical_stats": null,
@@ -28,12 +28,12 @@
       "customer_id": {
         "column_name": "customer_id",
         "inferred_type": "string",
-        "total_rows": 5000,
+        "total_rows": 150,
         "null_count": 0,
-        "non_null_count": 5000,
+        "non_null_count": 150,
         "null_percentage": 0.0,
-        "unique_count": 1825,
-        "duplicate_count": 3175,
+        "unique_count": 123,
+        "duplicate_count": 27,
         "numerical_stats": null,
         "categorical_stats": null,
         "datetime_stats": null
@@ -41,57 +41,57 @@
       "order_amount": {
         "column_name": "order_amount",
         "inferred_type": "numerical",
-        "total_rows": 5000,
+        "total_rows": 150,
         "null_count": 0,
-        "non_null_count": 5000,
+        "non_null_count": 150,
         "null_percentage": 0.0,
-        "unique_count": 4407,
-        "duplicate_count": 593,
+        "unique_count": 150,
+        "duplicate_count": 0,
         "numerical_stats": {
-          "min": 6.47,
-          "max": 1007.77,
-          "mean": 107.7273,
-          "median": 88.255,
-          "std": 72.2837,
-          "p25": 60.4875,
-          "p50": 88.255,
-          "p75": 134.02,
+          "min": 20.46,
+          "max": 419.12,
+          "mean": 114.9885,
+          "median": 100.94,
+          "std": 69.0295,
+          "p25": 64.46,
+          "p50": 100.94,
+          "p75": 147.3,
           "histogram_bins": [
-            6.47,
-            106.6,
-            206.73,
-            306.86,
-            406.99,
-            507.12,
-            607.25,
-            707.38,
-            807.51,
-            907.64,
-            1007.77
+            20.46,
+            60.326,
+            100.19200000000001,
+            140.058,
+            179.924,
+            219.79,
+            259.656,
+            299.522,
+            339.388,
+            379.25399999999996,
+            419.12
           ],
           "histogram_counts": [
-            3098,
-            1472,
-            329,
-            67,
-            22,
-            7,
+            30,
+            44,
+            35,
+            16,
+            15,
             4,
-            0,
-            0,
-            1
+            2,
+            1,
+            1,
+            2
           ],
           "histogram_proportions": [
-            0.6196,
-            0.2944,
-            0.0658,
-            0.0134,
-            0.0044,
-            0.0014,
-            0.0008,
-            0.0,
-            0.0,
-            0.0002
+            0.2,
+            0.29333333333333333,
+            0.23333333333333334,
+            0.10666666666666667,
+            0.1,
+            0.02666666666666667,
+            0.013333333333333334,
+            0.006666666666666667,
+            0.006666666666666667,
+            0.013333333333333334
           ]
         },
         "categorical_stats": null,
@@ -100,46 +100,46 @@
       "order_status": {
         "column_name": "order_status",
         "inferred_type": "categorical",
-        "total_rows": 5000,
+        "total_rows": 150,
         "null_count": 0,
-        "non_null_count": 5000,
+        "non_null_count": 150,
         "null_percentage": 0.0,
         "unique_count": 4,
-        "duplicate_count": 4996,
+        "duplicate_count": 146,
         "numerical_stats": null,
         "categorical_stats": {
           "frequencies": {
-            "DELIVERED": 2047,
-            "SHIPPED": 1742,
-            "PLACED": 980,
-            "CANCELLED": 231
+            "DELIVERED": 64,
+            "SHIPPED": 54,
+            "PLACED": 23,
+            "CANCELLED": 9
           },
           "percentages": {
-            "DELIVERED": 40.94,
-            "SHIPPED": 34.84,
-            "PLACED": 19.6,
-            "CANCELLED": 4.62
+            "DELIVERED": 42.6667,
+            "SHIPPED": 36.0,
+            "PLACED": 15.3333,
+            "CANCELLED": 6.0
           },
           "top_10": [
             {
               "category": "DELIVERED",
-              "count": 2047,
-              "percentage": 40.94
+              "count": 64,
+              "percentage": 42.6667
             },
             {
               "category": "SHIPPED",
-              "count": 1742,
-              "percentage": 34.84
+              "count": 54,
+              "percentage": 36.0
             },
             {
               "category": "PLACED",
-              "count": 980,
-              "percentage": 19.6
+              "count": 23,
+              "percentage": 15.3333
             },
             {
               "category": "CANCELLED",
-              "count": 231,
-              "percentage": 4.62
+              "count": 9,
+              "percentage": 6.0
             }
           ],
           "new_categories": [],
@@ -150,46 +150,46 @@
       "payment_method": {
         "column_name": "payment_method",
         "inferred_type": "categorical",
-        "total_rows": 5000,
+        "total_rows": 150,
         "null_count": 0,
-        "non_null_count": 5000,
+        "non_null_count": 150,
         "null_percentage": 0.0,
         "unique_count": 4,
-        "duplicate_count": 4996,
+        "duplicate_count": 146,
         "numerical_stats": null,
         "categorical_stats": {
           "frequencies": {
-            "UPI": 2201,
-            "CARD": 1499,
-            "COD": 756,
-            "NET_BANKING": 544
+            "UPI": 74,
+            "CARD": 44,
+            "COD": 18,
+            "NET_BANKING": 14
           },
           "percentages": {
-            "UPI": 44.02,
-            "CARD": 29.98,
-            "COD": 15.12,
-            "NET_BANKING": 10.88
+            "UPI": 49.3333,
+            "CARD": 29.3333,
+            "COD": 12.0,
+            "NET_BANKING": 9.3333
           },
           "top_10": [
             {
               "category": "UPI",
-              "count": 2201,
-              "percentage": 44.02
+              "count": 74,
+              "percentage": 49.3333
             },
             {
               "category": "CARD",
-              "count": 1499,
-              "percentage": 29.98
+              "count": 44,
+              "percentage": 29.3333
             },
             {
               "category": "COD",
-              "count": 756,
-              "percentage": 15.12
+              "count": 18,
+              "percentage": 12.0
             },
             {
               "category": "NET_BANKING",
-              "count": 544,
-              "percentage": 10.88
+              "count": 14,
+              "percentage": 9.3333
             }
           ],
           "new_categories": [],
@@ -200,11 +200,11 @@
       "customer_email": {
         "column_name": "customer_email",
         "inferred_type": "string",
-        "total_rows": 5000,
-        "null_count": 100,
-        "non_null_count": 4900,
+        "total_rows": 150,
+        "null_count": 3,
+        "non_null_count": 147,
         "null_percentage": 2.0,
-        "unique_count": 4900,
+        "unique_count": 147,
         "duplicate_count": 0,
         "numerical_stats": null,
         "categorical_stats": null,
@@ -213,57 +213,57 @@
       "quantity": {
         "column_name": "quantity",
         "inferred_type": "numerical",
-        "total_rows": 5000,
+        "total_rows": 150,
         "null_count": 0,
-        "non_null_count": 5000,
+        "non_null_count": 150,
         "null_percentage": 0.0,
-        "unique_count": 15,
-        "duplicate_count": 4985,
+        "unique_count": 9,
+        "duplicate_count": 141,
         "numerical_stats": {
           "min": 1.0,
-          "max": 15.0,
-          "mean": 2.2138,
+          "max": 9.0,
+          "mean": 2.06,
           "median": 2.0,
-          "std": 1.6269,
+          "std": 1.563,
           "p25": 1.0,
           "p50": 2.0,
-          "p75": 3.0,
+          "p75": 2.0,
           "histogram_bins": [
             1.0,
-            2.4,
-            3.8,
-            5.199999999999999,
-            6.6,
-            8.0,
-            9.399999999999999,
-            10.799999999999999,
-            12.2,
-            13.6,
-            15.0
+            1.8,
+            2.6,
+            3.4000000000000004,
+            4.2,
+            5.0,
+            5.800000000000001,
+            6.6000000000000005,
+            7.4,
+            8.2,
+            9.0
           ],
           "histogram_counts": [
-            3464,
-            731,
-            566,
-            101,
-            65,
-            53,
-            10,
-            5,
+            74,
+            39,
+            18,
+            8,
+            0,
+            4,
+            3,
             1,
-            4
+            1,
+            2
           ],
           "histogram_proportions": [
-            0.6928,
-            0.1462,
-            0.1132,
-            0.0202,
-            0.013,
-            0.0106,
-            0.002,
-            0.001,
-            0.0002,
-            0.0008
+            0.49333333333333335,
+            0.26,
+            0.12,
+            0.05333333333333334,
+            0.0,
+            0.02666666666666667,
+            0.02,
+            0.006666666666666667,
+            0.006666666666666667,
+            0.013333333333333334
           ]
         },
         "categorical_stats": null,
@@ -272,19 +272,19 @@
       "order_timestamp": {
         "column_name": "order_timestamp",
         "inferred_type": "datetime",
-        "total_rows": 5000,
+        "total_rows": 150,
         "null_count": 0,
-        "non_null_count": 5000,
+        "non_null_count": 150,
         "null_percentage": 0.0,
-        "unique_count": 4994,
-        "duplicate_count": 6,
+        "unique_count": 150,
+        "duplicate_count": 0,
         "numerical_stats": null,
         "categorical_stats": null,
         "datetime_stats": {
-          "min_timestamp": "2026-10-28T14:27:28.803443+00:00",
-          "max_timestamp": "2026-11-11T14:25:39.803443+00:00",
-          "latest_event_timestamp": "2026-11-11T14:25:39.803443+00:00",
-          "avg_event_age_hours": 169.3,
+          "min_timestamp": "2026-10-28T16:59:57.456496+00:00",
+          "max_timestamp": "2026-11-11T13:31:24.456496+00:00",
+          "latest_event_timestamp": "2026-11-11T13:31:24.456496+00:00",
+          "avg_event_age_hours": 158.55,
           "is_sorted_asc": true,
           "gap_count": 0
         }
@@ -292,19 +292,19 @@
       "updated_at": {
         "column_name": "updated_at",
         "inferred_type": "datetime",
-        "total_rows": 5000,
+        "total_rows": 150,
         "null_count": 0,
-        "non_null_count": 5000,
+        "non_null_count": 150,
         "null_percentage": 0.0,
-        "unique_count": 4994,
-        "duplicate_count": 6,
+        "unique_count": 150,
+        "duplicate_count": 0,
         "numerical_stats": null,
         "categorical_stats": null,
         "datetime_stats": {
-          "min_timestamp": "2026-10-28T16:13:00.803443+00:00",
-          "max_timestamp": "2026-11-13T10:40:45.803443+00:00",
-          "latest_event_timestamp": "2026-11-13T10:40:45.803443+00:00",
-          "avg_event_age_hours": 145.23,
+          "min_timestamp": "2026-10-30T01:46:10.456496+00:00",
+          "max_timestamp": "2026-11-13T06:50:06.456496+00:00",
+          "latest_event_timestamp": "2026-11-13T06:50:06.456496+00:00",
+          "avg_event_age_hours": 135.33,
           "is_sorted_asc": false,
           "gap_count": 0
         }
